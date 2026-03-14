@@ -1,0 +1,38 @@
+:root { font-family: Inter, system-ui, Arial, sans-serif; color: #1f2937; background: #f3f4f6; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.app-shell { padding: 24px; max-width: 1240px; margin: 0 auto; }
+header h1 { margin: 0 0 16px; font-size: 1.5rem; }
+.device-grid { display: grid; grid-template-columns: 1fr 360px; gap: 20px; align-items: start; }
+.screen-shell { background: #fff; border-radius: 12px; padding: 20px; border: 1px solid #d1d5db; box-shadow: 0 6px 20px rgba(0,0,0,.06); }
+.mobile { max-width: 360px; }
+.device-tag { display: inline-block; margin-bottom: 12px; font-size: .75rem; background: #eef2ff; color: #3730a3; padding: 4px 8px; border-radius: 999px; }
+h2 { margin: 0 0 8px; }
+p { margin: 0 0 14px; }
+.muted { color: #6b7280; font-size: .9rem; }
+.field-wrap { margin-bottom: 12px; }
+label { display: block; font-size: .88rem; margin-bottom: 6px; font-weight: 600; }
+input { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #9ca3af; font-size: .95rem; }
+input:focus { border-color: #2563eb; outline: 2px solid #bfdbfe; }
+input.is-filled { background: #f9fafb; }
+input.has-error { border-color: #dc2626; }
+.field-error { color: #b91c1c; font-size: .83rem; margin: 4px 0 0; }
+.password-row { display: flex; gap: 8px; }
+.toggle-plain { padding: 0 12px; border-radius: 8px; border: 1px solid #9ca3af; background: #fff; }
+.btn { border: none; border-radius: 8px; padding: 10px 14px; font-weight: 600; cursor: pointer; margin-bottom: 10px; width: 100%; }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.btn-primary { background: #1d4ed8; color: #fff; }
+.btn-secondary { background: #e5e7eb; color: #111827; }
+.links-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.links-row button { border: none; background: transparent; color: #1d4ed8; cursor: pointer; padding: 0; text-decoration: underline; }
+.alert { border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: .9rem; }
+.alert-warning { background: #fef3c7; color: #92400e; }
+.alert-error { background: #fee2e2; color: #991b1b; }
+.alert-info { background: #dbeafe; color: #1e3a8a; }
+.otp-row { display: flex; gap: 8px; margin-bottom: 4px; }
+.otp-cell { width: 42px; text-align: center; font-size: 1.2rem; padding: 10px 0; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.4); display: grid; place-items: center; }
+.modal-card { width: min(460px, 92vw); background: white; border-radius: 12px; padding: 20px; }
+.mock-nav { margin-top: 16px; background: #fff; border: 1px dashed #9ca3af; border-radius: 10px; padding: 12px; }
+.mock-nav .links-row { gap: 12px; }
+@media (max-width: 900px) { .device-grid { grid-template-columns: 1fr; } .mobile { max-width: none; } }
